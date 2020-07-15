@@ -9,7 +9,7 @@ let manshour=manshourobjs.find(m=>
 let manshourBody;
 body.value=manshour.textBody;
 // setTimeout(() => {
-//      fetch(`http://localhost:3000/get/:${manshId}`)
+//      fetch(`https://posts-2610.herokuapp.com/get/:${manshId}`)
 //     .then(response => {
 //         return response.json()
 //     })
@@ -28,7 +28,7 @@ body.addEventListener('input',()=>{
 // addBtn.setAttribute('href',`index.html`)
 addBtn.addEventListener('click',()=>{
     console.log(manshour.textBody)
-    fetch('http://localhost:3000/add-post',{
+    fetch('https://posts-2610.herokuapp.com/add-post',{
             method:'POST',
             body:JSON.stringify({
                 id:manshId,
@@ -53,7 +53,7 @@ console.log(manshour.textBody)
 location.assign(`./index.html`);
 })
 removeBtn.addEventListener('click',()=>{
-    fetch('http://localhost:3000/delete-post',{
+    fetch('https://posts-2610.herokuapp.com/delete-post',{
         method:'DELETE',
         body:JSON.stringify({
             id:manshId,

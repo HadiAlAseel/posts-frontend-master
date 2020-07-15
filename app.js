@@ -7,7 +7,7 @@ const container=manshoursEl.parentElement;
 
 arr=getManshours();
 setTimeout(() => {
-     fetch(`http://localhost:3000/get`)
+     fetch(`https://posts-2610.herokuapp.com/get`)
     .then(response => {
         return response.json()
     })
@@ -22,7 +22,7 @@ manshourBtn.addEventListener('click', async (e)=>{
     let manshourId;
     let number=Math.random();
 
-        fetch('http://localhost:3000/add-post',{
+        fetch('https://posts-2610.herokuapp.com/add-post',{
             method:'POST',
             body:JSON.stringify({
                 number:number,
