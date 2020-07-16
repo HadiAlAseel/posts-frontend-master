@@ -29,7 +29,8 @@ manshourBtn.addEventListener('click', async (e)=>{
                 textBody:""
             }),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Content-Security-Policy':"script-src 'self' https://hadialaseel.github.io/posts-frontend"
               }
             })
              
