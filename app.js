@@ -7,7 +7,7 @@ const container=manshoursEl.parentElement;
 
 arr=getManshours();
 setTimeout(() => {
-     fetch(`https://posts-2610.herokuapp.com/get`)
+     fetch(`https://manshours-app-server.herokuapp.com/get`)
     .then(response => {
         return response.json()
     })
@@ -22,16 +22,14 @@ manshourBtn.addEventListener('click', async (e)=>{
     let manshourId;
     let number=Math.random();
 
-        fetch('https://posts-2610.herokuapp.com/add-post',{
+        fetch('https://manshours-app-server.herokuapp.com/add-post',{
             method:'POST',
             body:JSON.stringify({
                 number:number,
                 textBody:""
             }),
             headers: {
-                'Content-Type': 'application/json',
-                'Content-Security-Policy':"script-src 'self' https://hadialaseel.github.io/posts-frontend"
-              }
+                'Content-Type': 'application/json'              }
             })
              
             .then(response => {

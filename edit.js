@@ -28,7 +28,7 @@ body.addEventListener('input',()=>{
 // addBtn.setAttribute('href',`index.html`)
 addBtn.addEventListener('click',()=>{
     console.log(manshour.textBody)
-    fetch('https://posts-2610.herokuapp.com/add-post',{
+    fetch('https://manshours-app-server.herokuapp.com/add-post',{
             method:'POST',
             body:JSON.stringify({
                 id:manshId,
@@ -53,7 +53,7 @@ console.log(manshour.textBody)
 location.assign(`./index.html`);
 })
 removeBtn.addEventListener('click',()=>{
-    fetch('https://posts-2610.herokuapp.com/delete-post',{
+    fetch('https://manshours-app-server.herokuapp.com/delete-post',{
         method:'DELETE',
         body:JSON.stringify({
             id:manshId,
