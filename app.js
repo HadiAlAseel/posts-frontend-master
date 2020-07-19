@@ -7,7 +7,7 @@ const container=manshoursEl.parentElement;
 
 arr=getManshours();
 setTimeout(() => {
-     fetch(`http://cors-anywhere.herokuapp.com/https://manshours-app-server.herokuapp.com/get`)
+     fetch(`https://cors-anywhere.herokuapp.com/https://manshours-app-server.herokuapp.com/get`)
     .then(response => {
         return response.json()
     })
