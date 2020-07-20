@@ -7,7 +7,7 @@ const container=manshoursEl.parentElement;
 
 arr=getManshours();
 setTimeout(() => {
-     fetch(`https://manshours-app-server.herokuapp.com/get`)
+     fetch(`https://localhost:5000/get`)
     .then(response => {
         return response.json()
     })
