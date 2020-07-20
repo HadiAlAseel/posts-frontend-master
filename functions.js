@@ -21,7 +21,7 @@ const getManshours=()=>{
         const manshourBody=document.createElement('p');
         const statusEl=document.createElement('p')
         
-        if (oneMansh.body===''){
+        if (oneMansh.textBody===''){
             manshourBody.style.font="italic 20px arial,serif";
             manshourBody.style.textAlign='center';
             manshourBody.textContent='لا يوجد نص في هذا المنشور '
