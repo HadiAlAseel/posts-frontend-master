@@ -28,8 +28,8 @@ body.addEventListener('input',()=>{
 // addBtn.setAttribute('href',`index.html`)
 addBtn.addEventListener('click',()=>{
     console.log(manshour.textBody)
-    fetch('https://manshours-app-server.herokuapp.com/add-post',{
-            method:'POST',
+    fetch('https://manshours-app-server.herokuapp.com/update-post',{
+            method:'PUT',
             body:JSON.stringify({
                 id:manshId,
                 number:manshour.number,
