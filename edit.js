@@ -25,7 +25,7 @@ body.addEventListener('input',()=>{
     // body.value=e.target.value;   
 })
 
-// addBtn.setAttribute('href',`index.html`)
+addBtn.setAttribute('href',`index.html`)
 addBtn.addEventListener('click',()=>{
     console.log(manshour.textBody)
     fetch('https://manshours-app-server.herokuapp.com/update-post',{
@@ -50,7 +50,7 @@ addBtn.addEventListener('click',()=>{
               saveManshours(manshourobjs)
 // manshour.updatedAt=moment().valueOf();
 console.log(manshour.textBody)
-// location.assign(`./index.html`);
+location.assign(`./index.html`);
 })
 removeBtn.addEventListener('click',()=>{
     fetch('https://manshours-app-server.herokuapp.com/delete-post',{
