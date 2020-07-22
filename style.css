@@ -103,7 +103,7 @@ a {
     font-weight: 300;
     padding: .8rem;
     transition: background .3s ease;
-    margin-left:400px;
+    margin-left:300px;
 }
 
 .button {
@@ -132,7 +132,7 @@ a {
 .button--first {
     background: #888888;
     border-bottom: 2px solid #717171;
-    margin-left:400px;
+    margin-left:300px;
 }
 
 /* Note editor */
