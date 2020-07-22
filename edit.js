@@ -68,10 +68,10 @@ removeBtn.addEventListener('click',()=>{
           })
           .then(data => {
               console.log(data)
+              location.assign(`./index.html`);
           }).catch(err=>{
               console.log(err)
           })    
 manshourobjs= removeMan(manshour);
 saveManshours(manshourobjs);
-location.assign(`./index.html`);
 })
