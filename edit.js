@@ -44,13 +44,13 @@ addBtn.addEventListener('click',()=>{
               })
               .then(data => {
                   console.log(data)
+                  location.assign(`./index.html`);
               }).catch(err=>{
                   console.log(err)
               })
               saveManshours(manshourobjs)
 // manshour.updatedAt=moment().valueOf();
 console.log(manshour.textBody)
-location.assign(`./index.html`);
 })
 removeBtn.addEventListener('click',()=>{
     fetch('https://manshours-app-server.herokuapp.com/delete-post',{
